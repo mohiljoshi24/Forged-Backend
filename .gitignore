@@ -179,3 +179,33 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ==============================================================================
+# FORGED BACKEND EXTENSIONS (FastAPI, Playwright, DB, Cloud & Secrets)
+# ==============================================================================
+
+# Extended Secrets & Environment files
+.env*
+!.env.example
+
+# Playwright & Browser Automation artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+*.har
+
+# Local Databases & Volume mounts
+*.sqlite3
+*.db
+pgdata/
+
+# VS Code & JetBrains IDE settings
+.vscode/
+.idea/
+
+# Operating System garbage
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
